@@ -1,18 +1,26 @@
 public class Pessoa {
     private String nome;
-    private int idade;
     private String cpf;
 
-    public void init(String nome, int idade, String cpf){
+    public Pessoa(String nome, String cpf) {
         this.nome = nome;
-        this.idade = idade;
         this.cpf = cpf;
     }
 
     public void mostrarDados(){
         System.out.println("Nome: "+ this.nome);
-        System.out.println("Idade: "+ this.idade);
         System.out.println("Cpf: "+ this.cpf);
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
 }

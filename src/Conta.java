@@ -1,8 +1,10 @@
 public class Conta {
-    private double saldo = 0;
+    private double saldo;
     private int numero;
 
-    public void init(int numero){
+
+    public Conta(int numero) {
+        this.saldo = 0;
         this.numero = numero;
     }
 
@@ -28,4 +30,7 @@ public class Conta {
         return saldo;
     }
 
+    public int getNumero() {
+        return numero;
+    }
 }
