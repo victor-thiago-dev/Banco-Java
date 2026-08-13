@@ -14,6 +14,7 @@ public class Conta {
         System.out.println("---------------------");
         System.out.println("Número: " + this.numero);
         System.out.println("Titular: " + titular.getNome());
+        System.out.println("CPF do titular: " + titular.getCpf());
         System.out.println("Saldo: " + this.saldo);
         System.out.println("---------------------");
     }
